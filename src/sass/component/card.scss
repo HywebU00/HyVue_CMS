@@ -1,0 +1,167 @@
+@mixin cardHover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+
+.albumCard {
+  max-width: unset !important;
+  height: 100%;
+  &.v-card {
+    @include cardHover;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .v-img {
+    margin: 0.75rem;
+    margin-bottom: 0;
+    border-radius: rem(8);
+    height: rem(200);
+    max-height: rem(200);
+  }
+  .v-card-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .v-card-item__content {
+    .v-card-subtitle {
+      font-weight: 700;
+      font-size: 1em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .v-card-text {
+    align-items: self-end;
+    display: flex;
+  }
+
+  .iconList {
+    font-weight: 700;
+    .v-col {
+      display: flex;
+      align-items: center;
+    }
+    i {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+.albumCardList {
+  &.v-row {
+    margin-top: 0 !important;
+  }
+  &.list {
+    display: block;
+    > div {
+      max-width: unset;
+      border-bottom: 1px solid #ccc;
+      &:last-child {
+        border: none;
+      }
+    }
+    .cardContainer {
+      flex-direction: row;
+      background-color: unset;
+    }
+    @include screen('tablet') {
+      .cardContainer {
+        display: block;
+      }
+      .albumCard {
+        .cardContainer {
+          .v-img {
+            margin: 0 0 1rem 0;
+            width: 100%;
+            max-width: inherit;
+            aspect-ratio: 4 / 3;
+            height: auto;
+            max-height: unset;
+          }
+        }
+      }
+      .v-card-item {
+        padding: 0 0 1rem 0;
+      }
+    }
+    .v-img {
+      max-width: rem(200);
+      height: 150px;
+      width: rem(200);
+    }
+    .v-card {
+      display: block;
+      box-shadow: unset;
+      background: unset;
+      padding: 0.5rem;
+    }
+    .albumCard {
+      .v-img {
+        margin: 0 0.5rem 0 0;
+      }
+      .v-card-item {
+        padding-top: 0;
+      }
+      .iconList {
+        justify-content: end;
+        .v-col {
+          flex-grow: unset;
+        }
+      }
+    }
+    .v-card-text {
+      padding-bottom: 0;
+    }
+  }
+}
+.photoCard {
+  &.v-card {
+    @include cardHover;
+  }
+  position: relative;
+  .checkbox {
+    z-index: 1;
+    position: absolute;
+  }
+  .img {
+    position: relative;
+    margin: 0.5rem;
+    label {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .v-selection-control__wrapper {
+      top: -0.5rem;
+    }
+  }
+  &.v-card {
+    .v-card-title {
+      line-height: 1rem;
+    }
+  }
+  .v-card-title {
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .info {
+    .v-card-item {
+      padding: 0;
+      margin: 0.5rem;
+    }
+  }
+}

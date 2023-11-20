@@ -1,0 +1,40 @@
+//http://w3bits.com/sass-mixins/
+@mixin screen($size) {
+  $desktop: '(min-width: #{$screen-lg})'; // max-width >= 1280px
+  $notebook: '(max-width: #{$screen-md-max})'; // max-width <= 960px
+  $tablet: '(max-width: #{$screen-sm-max})'; // max-width <= 600x
+  $mobile: '(max-width: #{$screen-xs-max})'; // max-width <= 556px
+  $xs_mobile: '(max-width: #{$screen-xs-mobile-max})'; // max-width <= 575px
+
+  //mediaquery
+  // $screen-lg: 1280; //1400px !default; //電腦
+  // $screen-md-max: 960px; //992px !default; //平板
+  // $screen-sm-max: 600px; //768px !default; //手機
+  // $screen-xs-max: 576px !default; //極小尺寸 - hyui
+  // $screen-xs-mobile-max: 320px !default; //極小尺寸 - flex
+  @if $size==desktop {
+    @media screen and #{$desktop} {
+      @content;
+    }
+  } @else if $size==notebook {
+    @media screen and #{$notebook} {
+      @content;
+    }
+  } @else if $size==tablet {
+    @media screen and #{$tablet} {
+      @content;
+    }
+  } @else if $size==mobile {
+    @media screen and #{$mobile} {
+      @content;
+    }
+  } @else if $size==xs_mobile {
+    @media screen and #{$xs-mobile} {
+      @content;
+    }
+  } @else {
+    @media screen and #{$size} {
+      @content;
+    }
+  }
+}

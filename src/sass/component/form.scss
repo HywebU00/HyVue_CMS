@@ -1,0 +1,9 @@
+.formGrp {
+  label {
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
+}
+input:-internal-autofill-selected {
+  background: #fff !important;
+}

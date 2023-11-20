@@ -1,0 +1,77 @@
+// src/sass/variables.scss
+
+// Globals
+$border-radius-root: 6px;
+$font-size-root: 16px;
+$remFontSize: 16;
+
+$gray: #e9ecef;
+// $grayLight: #ececec;
+$gray3: #828282;
+$gray2: #4b4b4b;
+
+$dark: rgba(0, 0, 0, 0.87);
+
+//背景色
+$backgroundColor: $gray;
+$boxShadow: rgba(51, 64, 76, 0.2) 0px 8px 24px;
+
+//mediaquery
+$screen-lg: 1280; //1400px !default; //電腦
+$screen-md-max: 960px; //992px !default; //平板
+$screen-sm-max: 600px; //768px !default; //手機
+$screen-xs-max: 576px !default; //極小尺寸 - hyui
+$screen-xs-mobile-max: 320px !default; //極小尺寸 - flex
+
+$boxShadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+// 字型設定
+$fontFamily: 'Noto Sans', 'Noto Sans TC', Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+
+$fontSize: 1em;
+$text-shadow: #000000a1 0.1em 0.1em 0.2em;
+// rem基本尺寸
+$remFontSize: 16;
+
+//側欄背景色
+$defaultBg: #f6f1ef;
+$defaultPrimary: #331919;
+$defaultLight: #fc590f;
+$defaultSecondary: #bf5f46;
+$defaultThird: #d78669;
+$defaultGradient: linear-gradient(to bottom, #bf5f46 0%, #d78669 100%);
+$defaultGradientBg: linear-gradient(to right bottom, #e76655, #e7755c, #e78464, #e7916e, #e79e7a, #e6a881, #e4b289, #e3bb93, #e0c49b, #decda5, #ddd5b0, #dcddbc);
+$defaultTheadColor: #695f5f;
+$defaultTbodyColor: #f7f7f5;
+
+//側欄背景色__綠色
+$greenGradient: linear-gradient(to bottom, #289d97 0%, #184f42 100%);
+$greenGradientBg: linear-gradient(to bottom, #54b38c, #2daca1, #1ea2b0, #3b96b6, #5a89b1, #6382ae, #6d7aa8, #7672a1, #766da2, #7868a3, #7a63a3, #7d5da3);
+
+$greenPrimary: #331919;
+$greenLight: #36e79e;
+$greenSecondary: #1f6a5b; //#852648;
+$greenThird: lighten($greenSecondary, 10);
+$greenTheadColor: #695f5f;
+$greenTbodyColor: #f7f7f5;
+
+//側欄背景色__藍色
+$blueGradient: linear-gradient(to bottom, #0e4c80 0%, #087ea6 100%);
+$blueGradientBg: linear-gradient(to bottom, #439bbb, #47a2b4, #54a8ad, #66ada5, #79b19e, #82b69a, #8ebb96, #9bbf91, #a7c689, #b6cc7f, #c9d175, #dfd46c);
+
+$bluePrimary: #331919;
+$blueLight: #00f0ff;
+$blueSecondary: #0786b2;
+$blueThird: lighten($blueSecondary, 10);
+$blueTheadColor: #695f5f;
+$blueTbodyColor: #f7f7f5;
+
+//側欄背景色__紅色
+$redGradient: linear-gradient(to bottom, #8e2a4d 0%, #bf4571 100%);
+$redGradientBg: linear-gradient(to bottom, #c7507c, #c65a7e, #c66380, #c46c83, #c37486, #c77c80, #c8857d, #c88f7c, #c39e79, #b9ae7f, #abbd8f, #9ccaa8);
+$redPrimary: #331919;
+$redLight: #ff378c;
+$redSecondary: #852648;
+$redThird: lighten($redSecondary, 10);
+$redTheadColor: #695f5f;
+$redTbodyColor: #f7f7f5;

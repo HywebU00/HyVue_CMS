@@ -1,0 +1,298 @@
+* {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  input,
+  select {
+    height: 2rem;
+    border-radius: 0.25rem !important;
+
+    &:focus-visible {
+      outline: 2px solid lighten($defaultThird, 30);
+    }
+  }
+}
+//左側選單
+.navDrawer {
+  &.v-navigation-drawer {
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px;
+    border: 0;
+  }
+  > .v-navigation-drawer__content {
+    display: flex;
+    flex-direction: column;
+    .v-list {
+      flex-grow: 1;
+      overflow-y: scroll;
+      .v-list-item--nav:not(:only-child) {
+        margin-bottom: 0;
+      }
+    }
+    .v-list-item {
+      + .v-list-group__items {
+        .v-list-item {
+          height: rem(35);
+          padding-inline-start: 12px !important;
+          padding: 4px 8px;
+          .v-list-item-title {
+            margin-left: rem(24);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .v-list-item__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    .v-list-item-title {
+      font-size: 1em;
+    }
+  }
+  .drawerBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: -30px;
+    top: calc(50vh - 60px);
+    background: $defaultBg;
+    width: rem(60);
+    height: rem(60);
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 0px 3px;
+    span {
+      transition: 0.5s all;
+      margin-left: 0.5rem;
+      color: $defaultPrimary;
+      font-size: 3rem;
+      transform: rotate(180deg);
+    }
+  }
+}
+//使用者登入資訊
+.userInfo {
+  display: flex;
+  background: #ccc;
+  border-radius: 0.5rem;
+  padding: rem(10);
+  margin: 0.5rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  li {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.25em;
+    color: #fff;
+  }
+  button {
+    width: rem(35);
+    height: rem(35);
+    border-radius: 50%;
+
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+//左側選單點擊收起
+.navDrawer.hidden {
+  @include screen('notebook') {
+    width: 0 !important;
+  }
+  > .v-navigation-drawer__content {
+    .logoImg {
+      margin: rem(30) rem(10);
+      .logo {
+        + h1 {
+          display: none;
+        }
+      }
+      + .v-list {
+        width: unset;
+      }
+    }
+    .v-list-group {
+      .v-list-item {
+        .v-list-item__content {
+          justify-content: center;
+          .v-list-item-title {
+            display: none;
+          }
+          img {
+            width: rem(24);
+            height: rem(24);
+            margin-right: 0;
+          }
+        }
+        .v-list-item__append {
+          display: none;
+        }
+        + .v-list-group__items {
+          display: none;
+        }
+      }
+    }
+  }
+  .userInfo {
+    margin-bottom: 1.5rem;
+    padding: 0.25rem;
+    .v-avatar,
+    ul {
+      display: none;
+    }
+  }
+  .drawerBtn {
+    span {
+      transform: rotate(0deg);
+    }
+  }
+}
+.functionList {
+  margin-right: 1rem;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+  ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+}
+//工具列ＣＳＳ設定
+@mixin btnContainer {
+  ul {
+    padding: 0.5rem;
+    li {
+      margin-left: 0.25rem;
+    }
+  }
+  .v-btn {
+    box-shadow: unset;
+    border: 3px solid #fff;
+    &.active {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+}
+.fontBtnContainer {
+  @include btnContainer;
+}
+.colorBtnContainer {
+  @include btnContainer;
+  ul {
+    :nth-child(1) {
+      button {
+        background: #ee8f5a;
+      }
+    }
+    :nth-child(2) {
+      button {
+        background: #7fbb9c;
+      }
+    }
+    :nth-child(3) {
+      button {
+        background: #e67289;
+      }
+    }
+    :nth-child(4) {
+      button {
+        background: #5f7aa4;
+      }
+    }
+  }
+}
+.infoBtnContainer {
+  .v-input__control {
+    padding: 0.5rem;
+  }
+  max-width: 300px;
+
+  ul {
+    overflow-y: scroll;
+    max-height: rem(300);
+    margin: 1rem;
+  }
+  li {
+    display: flex;
+    border-bottom: #ccc 1px solid;
+    align-items: center;
+    &:first-child {
+      margin-top: 0rem;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    a {
+      display: flex;
+
+      width: 100%;
+      color: #000;
+      text-decoration: none;
+      position: relative;
+    }
+    div {
+      padding-right: rem(30);
+    }
+    .title {
+      margin-left: 1rem;
+      position: relative;
+      display: block;
+      font-weight: 500;
+      @include textLine(2, 1.25em);
+    }
+    .time {
+      margin-left: 1.25rem;
+      font-size: 1em;
+    }
+    .arrow_icon {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+// 手機版本開合設定
+main {
+  @include screen('notebook') {
+    padding: 0 !important;
+    padding-top: rem(64) !important;
+    width: 100% !important;
+  }
+  background: #eee;
+}
+header {
+  @include screen('notebook') {
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
+//背景顏色設定
+.v-theme--dark {
+  main {
+    background: unset;
+  }
+}
+.container {
+  &.v-container {
+    max-width: unset !important;
+  }
+}

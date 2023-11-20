@@ -1,0 +1,66 @@
+//暗黑版樣式設定 dark Style-------
+.v-theme--dark {
+  .navDrawer {
+    .drawerBtn {
+      background-color: rgb(35 35 35);
+      span {
+        color: #fff;
+      }
+    }
+    .v-navigation-drawer__content {
+      .v-list-group {
+        > .v-list-item {
+          &:hover,
+          &.v-list-item--active {
+            background: #ccc;
+            color: #000;
+            img {
+              filter: unset;
+            }
+          }
+        }
+      }
+      .logoImg {
+        .logo {
+          + img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+    &.v-theme--dark {
+      background: rgb(35 35 35);
+      .v-list-item__content {
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
+  .infoBtnContainer {
+    li {
+      div {
+        color: #fff;
+      }
+    }
+  }
+
+  .treeviewBlock {
+    .treeTitle {
+      color: #fff;
+    }
+    .item {
+      > div {
+        &:hover {
+          .treeTitle {
+            color: #000;
+            .text-primary {
+              color: #000 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

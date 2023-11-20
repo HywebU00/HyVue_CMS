@@ -1,0 +1,46 @@
+.treeviewBlock {
+  ul {
+    ul {
+      padding-left: 1rem;
+    }
+  }
+  .treeTitle {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: $defaultPrimary;
+    a {
+      color: $defaultPrimary;
+    }
+    button {
+      margin-left: auto;
+    }
+  }
+  .item {
+    cursor: pointer;
+    width: 100%;
+    > div {
+      &:hover {
+        background: #f1eeee;
+        border-radius: 0.5rem;
+      }
+      padding: 0.2rem;
+    }
+    > ul > div {
+      line-height: 1.5rem;
+      width: 100%;
+    }
+  }
+  .bold {
+    position: relative;
+    color: $defaultPrimary;
+
+    + ul {
+      > li :not(.bold + ul) {
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+//body 預設字級
+body {
+  font-size: 0.938em; //1em;
+  font-weight: normal;
+  line-height: 1.45em;
+  font-family: $fontFamily;
+  -webkit-text-size-adjust: none;
+  // --變更為全站
+  &.smallSize {
+    font-size: calc(0.938em * 0.9); //0.938em;
+  }
+  &.largeSize {
+    font-size: calc(0.938em * 1.1); // 1.125em;
+  }
+}
