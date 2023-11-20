@@ -5,7 +5,7 @@
         <h3 class="text-center">
           <img style="width: 36px" src="~@/assets/Logo.png" alt="" /><img
             style="margin-left: 1rem"
-            src="~@/assets/logo_font.png"
+            src="~@/assets/logo.png"
             alt=""
           />
           <p class="text-h5">管理平台樣板</p>
