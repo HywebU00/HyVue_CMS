@@ -2,9 +2,57 @@
   <v-container class="container">
     <v-breadcrumbs :items="['首頁', '節點', '節點']"></v-breadcrumbs>
     <v-divider class="pt-1 mb-3"></v-divider>
-    <h2>共通元素 - 表單</h2>
+    <h2 class="d-flex align-center">
+      共通元素 - 表單
+      <v-btn
+        class="mr-0 ml-auto"
+        color="primary"
+        icon="mdi-magnify"
+        size="small"
+        rounded="sm"
+        @click="expand = !expand"
+      ></v-btn>
+    </h2>
     <v-divider class="mt-3 mb-4"></v-divider>
-    <v-row>
+    <!-- 查詢區塊 start -->
+    <v-expand-transition>
+      <div height="300" v-show="expand">
+        <v-card class="mb-6">
+          <div class="pa-2">
+            <h4 class="text-h6 text-primary font-weight-bold">查詢</h4>
+            <v-divider class="pt-1 mb-2"></v-divider>
+            <v-form>
+              <v-container style="max-width: unset">
+                <v-row>
+                  <v-col cols="5">
+                    <v-text-field
+                      density="compact"
+                      label="文字標準表單"
+                      hide-details="auto"
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="6">
+                    <v-text-field
+                      label="文字標準表單"
+                      density="compact"
+                      hide-details
+                      :messages="['文字標準表單']"
+                    ></v-text-field>
+                  </v-col>
+                  <v-col>
+                    <v-btn size="small" class="h-100" block color="primary"
+                      >選擇</v-btn
+                    >
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-form>
+          </div>
+        </v-card>
+      </div>
+    </v-expand-transition>
+    <!-- 查詢區塊 end  -->
+    <v-row class="">
       <v-col md="6" cols="12">
         <v-card class="pa-2 h-100">
           <h4 class="text-h6 text-primary font-weight-bold">文字標準表單</h4>
@@ -676,6 +724,7 @@ export default {
   data: () => ({
     rules: [(v) => v.length <= 10 || "10字為限"],
     visible: false,
+    expand: false,
   }),
   components: {},
 };

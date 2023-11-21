@@ -6,7 +6,7 @@
       :rail="rail"
       permanent
       :rail-width="railWidth"
-      :width="210"
+      :width="256"
       @click="rail = false"
     >
       <v-app-bar-nav-icon

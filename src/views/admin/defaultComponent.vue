@@ -99,8 +99,10 @@
 
 <script>
 import gsap from "gsap";
+
 import pieChart from "@/components/chart/pieChart.vue";
 import lineAndBarChart from "@/components/chart/lineAndBarChart.vue";
+
 export default {
   data: () => ({
     functionGroupToggle: 0,

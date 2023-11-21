@@ -10,6 +10,7 @@ import {
   TitleComponent,
   TooltipComponent,
   LegendComponent,
+  ToolboxComponent,
 } from "echarts/components";
 import VChart, { THEME_KEY } from "vue-echarts";
 import { ref, provide } from "vue";
@@ -20,6 +21,7 @@ use([
   TitleComponent,
   TooltipComponent,
   LegendComponent,
+  ToolboxComponent,
 ]);
 
 provide(THEME_KEY, "");
