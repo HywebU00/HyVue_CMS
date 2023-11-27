@@ -9,7 +9,7 @@
       <div>
         <v-container class="container">
           <!-- 標籤列 start -->
-          <v-row class="mb-1">
+          <v-row>
             <v-col cols="12" class="py-0"
               ><div>
                 <v-chip-group v-model="selection">
@@ -27,13 +27,18 @@
               <v-divider class="my-2"></v-divider>
             </v-col>
             <v-col class="pb-0 justify-end d-flex" cols="12">
-              <v-btn variant="flat" color="primary " prepend-icon="mdi-plus"
+              <v-btn
+                variant="flat"
+                color="primary "
+                size="small"
+                class="mb-4"
+                prepend-icon="mdi-plus"
                 >新增</v-btn
               >
             </v-col>
           </v-row>
           <!-- 標籤列 end -->
-          <v-row class="albumCardList">
+          <v-row class="albumCardList mt-0">
             <v-col
               v-for="item in 10"
               :key="item"

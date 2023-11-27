@@ -38,6 +38,14 @@ const routes = [
         path: "widget",
         component: () => import("@/views/admin/widgetComponent.vue"),
       },
+      {
+        path: "addNews",
+        component: () => import("@/views/admin/addNewsComponent.vue"),
+      },
+      {
+        path: "mediaPhoto",
+        component: () => import("@/views/admin/mediaPhotoComponent.vue"),
+      },
     ],
   },
   {

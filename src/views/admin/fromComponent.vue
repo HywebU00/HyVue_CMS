@@ -24,24 +24,26 @@
             <v-form>
               <v-container style="max-width: unset">
                 <v-row>
-                  <v-col cols="5">
+                  <v-col cols="6">
                     <v-text-field
                       density="compact"
                       label="文字標準表單"
                       hide-details="auto"
                     ></v-text-field>
                   </v-col>
-                  <v-col cols="6">
+                  <v-col cols="6" class="d-flex">
                     <v-text-field
                       label="文字標準表單"
                       density="compact"
                       hide-details
                       :messages="['文字標準表單']"
                     ></v-text-field>
-                  </v-col>
-                  <v-col>
-                    <v-btn size="small" class="h-100" block color="primary"
-                      >選擇</v-btn
+                    <v-btn
+                      class="h-100 ml-5"
+                      color="primary"
+                      size="small"
+                      rounded="sm"
+                      >查詢</v-btn
                     >
                   </v-col>
                 </v-row>
@@ -64,18 +66,21 @@
                   <v-text-field
                     label="文字標準表單"
                     hide-details="auto"
+                    density="compact"
                   ></v-text-field>
                 </v-col>
                 <v-col cols="12">
                   <v-text-field
                     label="文字標準表單"
                     hide-details="auto"
+                    density="compact"
                     :messages="['文字標準表單']"
                   ></v-text-field>
                 </v-col>
                 <v-col cols="12">
                   <v-text-field
                     label="文字標準表單"
+                    density="compact"
                     hide-details="auto"
                     error-messages="請填寫正確的格式"
                   ></v-text-field>
@@ -96,6 +101,7 @@
                   <v-text-field
                     label="日期選擇"
                     hide-details="auto"
+                    density="compact"
                     append-inner-icon="mdi-calendar-range"
                   ></v-text-field>
                 </v-col>
@@ -105,6 +111,7 @@
                   <v-text-field
                     :messages="['文字標準表單']"
                     label="日期選擇"
+                    density="compact"
                     append-inner-icon="mdi-calendar-range"
                   >
                     <template v-slot:append>
@@ -116,6 +123,7 @@
                   <v-text-field
                     append-inner-icon="mdi-calendar-range"
                     label="日期選擇"
+                    density="compact"
                     :messages="['文字標準表單']"
                     hide-details="auto"
                   ></v-text-field
@@ -126,6 +134,7 @@
                   <v-text-field
                     label="日期選擇"
                     error-messages="日期選擇"
+                    density="compact"
                     append-inner-icon="mdi-calendar-range"
                   >
                     <template v-slot:append>
@@ -139,6 +148,7 @@
                     append-inner-icon="mdi-calendar-range"
                     label="日期選擇"
                     hide-details="auto"
+                    density="compact"
                   ></v-text-field
                 ></v-col>
               </v-row>
@@ -195,6 +205,23 @@
                     <v-radio label="選項二" value="2"></v-radio>
                     <v-radio label="選項三" value="3"></v-radio> </v-radio-group
                 ></v-col>
+              </v-row>
+              <v-row class="formGrp">
+                <v-col>
+                  <v-switch
+                    color="primary"
+                    @click="model = !model"
+                    :label="model ? `開啟` : `關閉`"
+                  ></v-switch>
+                </v-col>
+                <v-col>
+                  <v-switch
+                    color="primary"
+                    inset
+                    @click="model2 = !model2"
+                    :label="model2 ? `開啟` : `關閉`"
+                  ></v-switch>
+                </v-col>
               </v-row>
             </v-container>
           </v-form>
@@ -685,6 +712,7 @@
                 <v-col
                   ><v-select
                     label="下拉式選單"
+                    density="compact"
                     hide-details="auto"
                     :items="['選項ㄧ', '選項二', '選項三']"
                   ></v-select
@@ -695,6 +723,7 @@
                   ><v-select
                     label="下拉式選單"
                     hide-details="auto"
+                    density="compact"
                     messages="說明文字"
                     :items="['選項ㄧ', '選項二', '選項三']"
                   ></v-select
@@ -704,6 +733,7 @@
                 <v-col
                   ><v-select
                     label="下拉式選單"
+                    density="compact"
                     hide-details="auto"
                     error-messages="下拉式選單"
                     :items="['選項ㄧ', '選項二', '選項三']"
@@ -725,6 +755,8 @@ export default {
     rules: [(v) => v.length <= 10 || "10字為限"],
     visible: false,
     expand: false,
+    model: true,
+    model2: true,
   }),
   components: {},
 };

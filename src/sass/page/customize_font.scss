@@ -13,3 +13,57 @@ body {
     font-size: calc(0.938em * 1.1); // 1.125em;
   }
 }
+$fontSize-config: (
+  medium: (
+    class: 'mediumSize',
+    font-size: 1rem,
+  ),
+  small: (
+    class: 'smallSize',
+    font-size: 1rem * 0.875,
+  ),
+  large: (
+    class: 'largeSize',
+    font-size: 1rem * 1.125,
+  ),
+);
+@each $name, $value in $fontSize-config {
+  $class: map-get($value, class);
+  $font-size: map-get($value, font-size);
+  .#{$class} {
+    .v-chip {
+      .v-chip__content {
+        font-size: $font-size;
+      }
+    }
+    .v-table {
+      thead {
+        tr > th {
+          font-size: $font-size;
+        }
+      }
+    }
+    .v-btn {
+      &.v-btn--icon {
+        .v-btn__content {
+          font-size: 1rem;
+        }
+      }
+      .v-btn__content {
+        font-size: $font-size * 0.9;
+      }
+    }
+
+    table {
+      thead > tr th {
+        font-size: $font-size;
+      }
+      tr {
+        th,
+        td {
+          font-size: $font-size;
+        }
+      }
+    }
+  }
+}

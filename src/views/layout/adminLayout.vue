@@ -100,6 +100,18 @@
             @click="pushLink('widget')"
           >
           </v-list-item>
+          <v-list-item
+            title="新增資料"
+            value="addNews"
+            @click="pushLink('addNews')"
+          >
+          </v-list-item>
+          <v-list-item
+            title="多媒體資料庫"
+            value="mediaPhoto"
+            @click="pushLink('mediaPhoto')"
+          >
+          </v-list-item>
         </v-list-group>
         <!-- Basic Layout end -->
         <v-divider class="ma-1"></v-divider>
