@@ -13,7 +13,7 @@ import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi";
 import { fa } from "vuetify/iconsets/fa4";
-import { md3 } from "vuetify/blueprints";
+// import { md3 } from "vuetify/blueprints";
 import { VDataTableServer } from "vuetify/labs/VDataTable";
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
