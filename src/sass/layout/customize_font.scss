@@ -53,7 +53,6 @@ $fontSize-config: (
         font-size: $font-size * 0.9;
       }
     }
-
     table {
       thead > tr th {
         font-size: $font-size;
@@ -64,6 +63,47 @@ $fontSize-config: (
           font-size: $font-size;
         }
       }
+    }
+    p {
+      font-size: $font-size;
+      line-height: $font-size * 1.5;
+    }
+    ul,
+    ol {
+      li {
+        font-size: $font-size;
+        line-height: $font-size * 2.5;
+      }
+    }
+    .text-h1 {
+      font-size: $font-size * 2 !important;
+      font-weight: 700;
+      line-height: 3rem;
+    }
+    .text-h2 {
+      font-size: $font-size * 1.75 !important;
+      line-height: 2.5rem;
+      font-weight: 700;
+    }
+    .text-h3 {
+      font-size: $font-size * 1.5 !important;
+      line-height: 2rem;
+      font-weight: 700;
+    }
+    .text-h4 {
+      font-size: $font-size * 1.25 !important;
+      line-height: 1.5rem;
+      font-weight: 700;
+    }
+    .text-h5 {
+      font-size: $font-size * 1.125 !important;
+      line-height: 1.5rem;
+      font-weight: 700;
+    }
+    .text-h6 {
+      font-size: $font-size !important;
+      line-height: 1.5rem;
+      font-weight: 700;
     }
   }
 }

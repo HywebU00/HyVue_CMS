@@ -85,10 +85,10 @@
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-  li {
+  ul li {
     font-weight: 500;
     font-size: 1em;
-    line-height: 1.25em;
+    line-height: 1.25em !important;
     color: #fff;
   }
   button {

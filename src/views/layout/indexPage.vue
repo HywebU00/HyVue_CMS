@@ -3,9 +3,9 @@
     <div class="index_container">
       <div class="index_title">
         <h3 class="text-center">
-          <img style="width: 36px" src="~@/assets/Logo.png" alt="" /><img
+          <img style="width: 36px" src="~@/assets/images/logo.png" alt="" /><img
             style="margin-left: 1rem"
-            src="~@/assets/logo.png"
+            src="~@/assets/images/logo.png"
             alt=""
           />
           <p class="text-h5">管理平台樣板</p>
