@@ -8,13 +8,13 @@
     display: flex;
     align-items: center;
     font-weight: 400;
-    color: $defaultPrimary;
+    // color: $defaultPrimary;
     i {
       font-size: 1.2em;
     }
-    a {
-      color: $defaultPrimary;
-    }
+    // a {
+    //   color: $defaultPrimary;
+    // }
     button {
       margin-left: auto;
     }
@@ -36,8 +36,7 @@
   }
   .bold {
     position: relative;
-    color: $defaultPrimary;
-
+    // color: $defaultPrimary;
     + ul {
       > li :not(.bold + ul) {
         &:hover {

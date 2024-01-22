@@ -10,9 +10,7 @@
           />
           <p class="text-h5">管理平台樣板</p>
         </h3>
-        <v-btn color="secondary"
-          ><a href="https://github.com/HywebU00/2023_CIP">檔案下載</a></v-btn
-        >
+        <v-btn color="secondary"><a href="">檔案下載</a></v-btn>
       </div>
 
       <div class="d-flex mb-2 justify-center">

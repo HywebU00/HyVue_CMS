@@ -33,15 +33,35 @@
               <!-- tab start -->
               <v-row>
                 <v-col>
-                  <v-tabs v-model="tab" color="primary">
-                    <v-tab append-icon="mdi-pencil" value="one">頁籤ㄧ</v-tab>
-                    <v-tab append-icon="mdi-pencil" value="two">頁籤二</v-tab>
-                    <v-tab append-icon="mdi-pencil" value="three">頁籤三</v-tab>
+                  <v-tabs v-model="tab" color="primary" grow>
+                    <v-tab prepend-icon="mdi-pencil" value="one"
+                      >內容編輯</v-tab
+                    >
+                    <v-tab prepend-icon="mdi-pencil" value="two"
+                      >發布設定</v-tab
+                    >
+                    <v-tab prepend-icon="mdi-pencil" value="three"
+                      >詮釋資料</v-tab
+                    >
                   </v-tabs>
                   <v-card-text>
                     <v-window v-model="tab">
-                      <v-window-item value="one"> One </v-window-item>
+                      <v-window-item value="one">
+                        <h4 class="text-h6 text-primary font-weight-bold">
+                          文字標準表單
+                        </h4>
+                        <v-divider class="mt-2 mb-4"></v-divider>
+                        <v-form>
+                          <v-text-field
+                            label="文字標準表單"
+                            hide-details="auto"
+                            density="compact"
+                          ></v-text-field>
+                        </v-form>
 
+                        <div class="text-h1">標題一</div>
+                        <div class="text-h2">標題一</div>
+                      </v-window-item>
                       <v-window-item value="two"> Two </v-window-item>
 
                       <v-window-item value="three"> Three </v-window-item>

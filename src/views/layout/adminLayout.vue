@@ -22,7 +22,7 @@
           class="logo"
           height="32"
           max-width="32"
-          src="~@/assets/logo.png"
+          src="~@/assets/images/logo.png"
           alt=""
         />
         <h1 class="ml-2 text-h6">管理平台樣板</h1>
@@ -132,7 +132,7 @@
       </v-list>
       <!-- 使用者 登入視窗start -->
       <div class="userInfo bg-loginColor">
-        <v-avatar image="~@/assets/account.jpg" size="35"></v-avatar>
+        <v-avatar image="~@/assets/images/account.jpg" size="35"></v-avatar>
         <ul class="">
           <li>Elle Wang</li>
           <li>企劃處</li>

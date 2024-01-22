@@ -30,7 +30,7 @@
                 </v-col>
                 <v-col class="pb-0 justify-space-between d-flex" cols="12">
                   <v-menu transition="slide-y-transition">
-                    <template v-slot:activator="{ props }">
+                    <template>
                       <v-btn
                         variant="flat"
                         color="primary "
@@ -141,32 +141,60 @@
                 </v-col>
                 <v-col cols="12" md="10">
                   <!-- 卡片列表 start -->
-                  <v-container
-                    class="container align-content-start d-flex flex-wrap"
-                  >
-                    <v-card class="photoCard" v-for="item in 25" :key="item">
-                      <div class="cardContainer">
-                        <div class="img">
-                          <v-label>
-                            <v-checkbox
-                              v-ripple.stop
-                              class="checkbox"
-                              color="light"
-                              v-model="selected"
-                              :value="item"
-                            ></v-checkbox>
-                          </v-label>
-                          <v-img
-                            aspect-ratio="1/1"
-                            cover
-                            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                          ></v-img>
-                        </div>
-                        <!-- <div class="info">
-                          <div class="v-card-item">資料資料資料</div>
-                        </div> -->
-                      </div>
-                    </v-card>
+                  <v-container class="container">
+                    <v-row class="pa-4 mediaCardList">
+                      <v-col class="pa-1" v-for="item in 2" :key="item">
+                        <v-card class="photoCard">
+                          <div class="cardContainer">
+                            <div class="img">
+                              <v-label></v-label>
+                              <v-checkbox
+                                v-ripple.stop
+                                class="checkbox"
+                                color="light"
+                                v-model="selected"
+                                :value="item"
+                              ></v-checkbox>
+                              <v-img
+                                src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                                cover
+                              ></v-img>
+                            </div>
+                            <div class="info">
+                              <v-card-item>
+                                <v-card-title
+                                  >檔案名稱檔案名稱檔案名稱</v-card-title
+                                >
+                              </v-card-item>
+                            </div>
+                          </div>
+                        </v-card>
+                      </v-col>
+                      <v-col
+                        class="pa-1"
+                        v-for="item in 30"
+                        :key="'num' + item"
+                      >
+                        <v-card class="photoCard">
+                          <div class="cardContainer">
+                            <div class="img">
+                              <v-label></v-label>
+                              <v-checkbox
+                                v-ripple.stop
+                                class="checkbox"
+                                color="light"
+                                v-model="selected"
+                                :value="'num' + item"
+                              ></v-checkbox>
+                              <v-img
+                                src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                                cover
+                              ></v-img>
+                            </div>
+                          </div>
+                        </v-card>
+                      </v-col>
+                    </v-row>
                   </v-container>
                   <!-- 卡片列表 end -->
                 </v-col>

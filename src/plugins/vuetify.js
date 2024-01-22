@@ -1,9 +1,3 @@
-/**
- * plugins/vuetify.js
- *
- * Framework documentation: https://vuetifyjs.com`
- */
-
 // Styles
 import "@mdi/font/css/materialdesignicons.css";
 
@@ -15,9 +9,8 @@ import { aliases, mdi } from "vuetify/iconsets/mdi";
 import { fa } from "vuetify/iconsets/fa4";
 // import { md3 } from "vuetify/blueprints";
 import { VDataTableServer } from "vuetify/labs/VDataTable";
-// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
-  // blueprint: md3,
+  // blueprint: md3,藍圖樣式
   theme: {
     defaultTheme: "default",
     themes: {

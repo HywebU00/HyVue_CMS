@@ -1,0 +1,23 @@
+// $color-pack: false;
+
+@import 'variables.scss';
+@import '@/sass/common/mixins/_mediaquery.scss';
+@import '@/sass/common/mixins/_text.scss';
+
+//customizingComponents
+@import '@/sass/customizingComponents/form.scss';
+@import '@/sass/customizingComponents/table.scss';
+@import '@/sass/customizingComponents/card.scss';
+@import '@/sass/customizingComponents/treeBlock.scss';
+
+//material-icons-round
+@import '@/sass/vendor/material-icons-round.scss';
+
+//layout
+@import '@/sass/layout/layout.scss';
+@import '@/sass/layout/customize_color.scss';
+@import '@/sass/layout/customize_font.scss';
+
+//vuetifyCSS
+@import '@/sass/components/VListItem.scss';
+@import '@/sass/components/VTable.scss';
