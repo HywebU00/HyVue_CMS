@@ -104,7 +104,7 @@ export default {
     },
   },
   mounted() {
-    this.cardAnimate();
+    // this.cardAnimate();
     this.themeInit();
   },
 };

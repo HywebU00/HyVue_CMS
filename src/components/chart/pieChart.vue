@@ -29,6 +29,7 @@ provide(THEME_KEY, "");
 const option = ref({
   title: {
     text: "圖表標題(可省略)",
+
     left: "center",
   },
   tooltip: {
@@ -50,11 +51,44 @@ const option = ref({
         {
           value: 1548,
           name: "CityE",
+          itemStyle: {
+            color: "#0156a2",
+            shadowColor: "#0156a2",
+          },
         },
-        { value: 735, name: "CityC" },
-        { value: 510, name: "CityD" },
-        { value: 434, name: "CityB" },
-        { value: 335, name: "CityA" },
+        {
+          value: 735,
+          name: "CityC",
+          itemStyle: {
+            color: "#32a7fa",
+            shadowColor: "#32a7fa",
+          },
+        },
+        {
+          value: 510,
+          name: "CityD",
+          itemStyle: {
+            color: "#3fd1b5",
+            shadowColor: "#3fd1b5",
+          },
+        },
+        {
+          value: 434,
+          name: "CityB",
+          itemStyle: {
+            color: "#405db2",
+            shadowColor: "#405db2",
+          },
+        },
+        {
+          value: 335,
+          name: "CityA",
+
+          itemStyle: {
+            color: "#1c93d0",
+            shadowColor: "#1c93d0",
+          },
+        },
       ],
       label: {
         show: false,

@@ -196,7 +196,7 @@
   ul {
     :nth-child(1) {
       button {
-        background: #ee8f5a;
+        background: #0156a2;
       }
     }
     :nth-child(2) {
@@ -231,6 +231,7 @@
     display: flex;
     border-bottom: #ccc 1px solid;
     align-items: center;
+
     &:first-child {
       margin-top: 0rem;
     }
@@ -249,7 +250,7 @@
       position: relative;
     }
     div {
-      padding-right: rem(30);
+      padding-right: rem(8);
     }
     .title {
       margin-left: 1rem;

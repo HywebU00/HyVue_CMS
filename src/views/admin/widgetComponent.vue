@@ -5,14 +5,14 @@
     <h2>特殊範例頁面 - 網站總覽</h2>
     <v-divider class="mt-3 mb-4"></v-divider>
     <v-row>
-      <v-col md="2" cols="12">
+      <v-col class="px-1" md="2" cols="12">
         <v-card class="treeviewBlock pa-2">
           <ul>
             <tree-item class="item" :model="treeData"></tree-item>
             <tree-item class="item" :model="treeData2"></tree-item>
           </ul> </v-card
       ></v-col>
-      <v-col md="10" cols="12">
+      <v-col class="px-1" md="10" cols="12">
         <!-- tablet 卡片列 start -->
         <v-card class="mb-5">
           <div class="">
@@ -74,7 +74,7 @@
                             :width="60"
                             aspect-ratio="1/1"
                             cover
-                            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+                            src="~@/assets/demo/06.jpg"
                           ></v-img>
                         </td>
                         <td>{{ item.title }}</td>

@@ -118,7 +118,7 @@
                     <td>{{ item.lang }}</td>
                     <td>{{ item.status }}</td>
                     <td>
-                      <div class="btnGroup">
+                      <div class="btnGroup d-flex">
                         <v-btn
                           size="x-small"
                           icon="mdi-delete"
@@ -216,7 +216,7 @@
                         :width="60"
                         aspect-ratio="1/1"
                         cover
-                        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+                        src="~@/assets/demo/06.jpg"
                       ></v-img>
                     </td>
                     <td>{{ item.title }}</td>

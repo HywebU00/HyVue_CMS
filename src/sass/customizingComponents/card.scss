@@ -10,7 +10,7 @@
   .v-img {
     margin: 0.75rem;
     margin-bottom: 0;
-    border-radius: rem(8);
+    border-radius: rem(4);
     height: rem(200);
     max-height: rem(200);
   }
@@ -155,6 +155,7 @@
   .img {
     position: relative;
     margin: 0.25rem;
+
     label {
       position: absolute;
       width: 100%;
@@ -163,10 +164,14 @@
       opacity: 1;
       z-index: 1;
     }
+    .v-img {
+      min-height: 80px;
+    }
   }
   &.v-card {
     .v-card-title {
       line-height: 1rem;
+      font-size: 0.8rem;
     }
   }
   .v-card-title {

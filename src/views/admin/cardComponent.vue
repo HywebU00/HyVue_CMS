@@ -50,10 +50,7 @@
             >
               <v-card class="albumCard">
                 <div class="cardContainer">
-                  <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    cover
-                  ></v-img>
+                  <v-img src="~@/assets/demo/01.jpg" cover></v-img>
                   <div class="info">
                     <v-card-item>
                       <v-card-title>資料標題</v-card-title>
@@ -141,10 +138,7 @@
             >
               <v-card class="albumCard">
                 <div class="cardContainer">
-                  <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    cover
-                  ></v-img>
+                  <v-img src="~@/assets/demo/02.jpg" cover></v-img>
                   <div class="info">
                     <v-card-item>
                       <v-card-title>資料標題</v-card-title>
@@ -208,10 +202,7 @@
                       v-model="selected"
                       :value="item"
                     ></v-checkbox>
-                    <v-img
-                      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                      cover
-                    ></v-img>
+                    <v-img src="~@/assets/demo/03.jpg" cover></v-img>
                   </div>
                   <div class="info" v-bind="props">
                     <v-card-item>

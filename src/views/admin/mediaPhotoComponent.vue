@@ -100,7 +100,11 @@
                     展開所有分類
                   </v-btn>
                   <!-- 手風琴元件 start -->
-                  <v-expansion-panels variant="accordion" v-model="panel">
+                  <v-expansion-panels
+                    class="accordionMenu"
+                    variant="accordion"
+                    v-model="panel"
+                  >
                     <v-expansion-panel
                       v-for="i in 3"
                       :key="i"
@@ -141,9 +145,15 @@
                 </v-col>
                 <v-col cols="12" md="10">
                   <!-- 卡片列表 start -->
-                  <v-container class="container">
-                    <v-row class="pa-4 mediaCardList">
-                      <v-col class="pa-1" v-for="item in 2" :key="item">
+                  <v-container class="container px-0">
+                    <v-row class="pa-0 mediaCardList">
+                      <v-col
+                        class="pa-1"
+                        cols="3"
+                        sm="2"
+                        v-for="item in 2"
+                        :key="item"
+                      >
                         <v-card class="photoCard">
                           <div class="cardContainer">
                             <div class="img">
@@ -171,6 +181,8 @@
                         </v-card>
                       </v-col>
                       <v-col
+                        cols="3"
+                        sm="2"
                         class="pa-1"
                         v-for="item in 30"
                         :key="'num' + item"

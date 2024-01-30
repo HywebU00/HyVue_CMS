@@ -17,7 +17,7 @@
         @click.stop="rail = !rail"
       ></v-app-bar-nav-icon>
       <!-- 平台logo start -->
-      <div class="logoImg d-none d-md-flex ml-3 mt-5">
+      <div class="logoImg d-none d-md-flex mt-5 align-center justify-center">
         <v-img
           class="logo"
           height="32"
@@ -25,7 +25,7 @@
           src="~@/assets/images/logo.png"
           alt=""
         />
-        <h1 class="ml-2 text-h6">管理平台樣板</h1>
+        <h1 class="ml-2 text-h4 text-primary">HyVue CMS</h1>
       </div>
       <!-- 平台logo end -->
       <v-list

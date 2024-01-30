@@ -241,18 +241,6 @@
           </div>
         </v-card>
       </v-col>
-      <v-col md="6" cols="12">
-        <v-card>
-          <div class="">
-            <v-container class="container">
-              <h4 class="text-h6 text-primary font-weight-bold">
-                基本拖拉模組
-              </h4>
-              <v-divider class="pt-2 mb-2"></v-divider>
-            </v-container>
-          </div>
-        </v-card>
-      </v-col>
     </v-row>
   </v-container>
 </template>

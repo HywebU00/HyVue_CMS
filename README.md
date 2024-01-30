@@ -1,11 +1,12 @@
 ## 關於此專案
 
 - 框架版本號: Vuetify3 + Vue3
-- 專案名稱: 2023_Vue CMS_template
+- 專案名稱: HyVue CMS
 - UI 設計師:
-- 切版設計師: Margo
+- 切版設計師:
 - 關於此專案: 根據常用頁面 整理一份後台系統頁面
-  相關文件請參閱 Vuetify3 文件
+  相關文件請參閱
+  [HyVue CMS 文件](https://hywebu00.github.io/Vue_CMS_doc/#/)
   <br/>
   <br/>
 

@@ -110,10 +110,10 @@ export default {
     panel: 1,
     selection: 1,
     countCards: [
-      { title: "今日訪客人數", bgColor: "#ec8a87", num: 500 },
-      { title: "待審資料", bgColor: "#f0bf4c", num: 320 },
-      { title: "今日新增資料", bgColor: "#b3cb20", num: 1370 },
-      { title: "今日訪客人數", bgColor: "#96a8d6", num: 348 },
+      { title: "今日訪客人數", bgColor: "#32a7fa", num: 500 },
+      { title: "待審資料", bgColor: "#3fd1b5", num: 320 },
+      { title: "今日新增資料", bgColor: "#0156a2", num: 1370 },
+      { title: "今日訪客人數", bgColor: "#1c93d0", num: 348 },
     ],
   }),
   methods: {

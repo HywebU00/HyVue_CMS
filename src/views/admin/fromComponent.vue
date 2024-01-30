@@ -436,8 +436,8 @@
           </v-form>
         </v-card>
       </v-col>
-      <!-- 組合型表單 start -->
       <!-- 組合型表單 end -->
+      <!-- 組合型表單 start -->
       <v-col md="6" cols="12">
         <v-card class="pa-2 h-100">
           <h4 class="text-h6 text-primary font-weight-bold">組合型表單</h4>
@@ -745,11 +745,88 @@
         </v-card>
       </v-col>
       <!-- 下拉選單樣式 end -->
+      <!-- 文字編輯器 start -->
+      <v-col cols="12" md="6">
+        <v-card class="pa-2 h-100">
+          <h4 class="text-h6 text-primary font-weight-bold">文字編輯器</h4>
+          <v-divider class="pt-1 mb-2"></v-divider>
+          <!-- 若無需使用則 npm uninstall -D @vueup/vue-quill@latest 解安裝 -->
+          <div class="pa-4">
+            <quill-editor style="height: 200px"></quill-editor>
+          </div>
+        </v-card>
+      </v-col>
+      <!-- 下文字編輯器 end -->
+      <!-- 日期選擇器 start -->
+      <v-col cols="12" md="6">
+        <v-card class="pa-2 h-100 overflow-visible">
+          <h4 class="text-h6 text-primary font-weight-bold">日期選擇器</h4>
+          <v-divider class="pt-1 mb-2"></v-divider>
+          <!-- 若無需使用則 npm uninstall -D @vuepic/vue-datepicker 解安裝 -->
+          <v-form>
+            <v-container>
+              <v-row class="formGrp">
+                <v-col class="pb-0" cols="12" lg="2">
+                  <label class="text-primary ml-0" for="">選擇日期</label>
+                </v-col>
+                <v-col cols="">
+                  <VueDatePicker
+                    class="datePicker"
+                    v-model="date"
+                    :enable-time-picker="false"
+                  ></VueDatePicker>
+                </v-col>
+              </v-row>
+              <v-row class="formGrp">
+                <v-col class="pb-0" cols="12" lg="2">
+                  <label class="text-primary ml-0" for="">日期範圍</label>
+                </v-col>
+                <v-col cols="">
+                  <VueDatePicker
+                    class="dateRangerPicker"
+                    range
+                    :enable-time-picker="false"
+                    v-model="rangeDate"
+                    select-text="確定"
+                    cancel-text="取消"
+                  ></VueDatePicker>
+                </v-col>
+              </v-row>
+              <v-row class="formGrp">
+                <v-col class="pb-0" cols="12" lg="2">
+                  <label class="text-primary ml-0" for="">多日曆選取</label>
+                </v-col>
+                <v-col cols="">
+                  <VueDatePicker
+                    class="multiDatePicker"
+                    range
+                    :enable-time-picker="false"
+                    :multi-calendars="{ solo: true }"
+                    v-model="multiDate"
+                    select-text="確定"
+                    cancel-text="取消"
+                  ></VueDatePicker>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-form>
+        </v-card>
+      </v-col>
+
+      <!-- 日期選擇器 end -->
     </v-row>
   </v-container>
 </template>
 
 <script>
+//載入 文字編輯器
+import { QuillEditor } from "@vueup/vue-quill";
+import "@vueup/vue-quill/dist/vue-quill.snow.css";
+
+//載入 日期選擇器
+import VueDatePicker from "@vuepic/vue-datepicker";
+import "@vuepic/vue-datepicker/dist/main.css";
+
 export default {
   data: () => ({
     rules: [(v) => v.length <= 10 || "10字為限"],
@@ -757,7 +834,13 @@ export default {
     expand: false,
     model: true,
     model2: true,
+    date: null,
+    rangeDate: null,
+    multiDate: null,
   }),
-  components: {},
+  components: {
+    QuillEditor,
+    VueDatePicker,
+  },
 };
 </script>

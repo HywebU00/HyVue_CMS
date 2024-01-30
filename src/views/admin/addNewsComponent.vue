@@ -144,10 +144,10 @@
                 ></v-col>
               </v-row>
               <v-row class="formGrp">
-                <v-col class="pb-0" cols="">
+                <v-col class="pr-1 pb-0" cols="">
                   <v-btn block color="primary">暫存</v-btn>
                 </v-col>
-                <v-col cols="" class="pb-0">
+                <v-col class="pl-1 pb-0">
                   <v-btn block color="secondary">預覽</v-btn>
                 </v-col>
               </v-row>

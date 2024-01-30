@@ -82,24 +82,24 @@
             <v-btn
               icon
               size="x-small"
-              @click="changeTheme('green')"
-              :class="['green', { active: this.theme === 'green' }]"
+              @click="changeTheme('color1')"
+              :class="['color1', { active: this.theme === 'color1' }]"
             ></v-btn>
           </li>
           <li>
             <v-btn
               icon
               size="x-small"
-              @click="changeTheme('red')"
-              :class="['red', { active: this.theme === 'red' }]"
+              @click="changeTheme('color2')"
+              :class="['color2', { active: this.theme === 'color2' }]"
             ></v-btn>
           </li>
           <li>
             <v-btn
               icon
               size="x-small"
-              @click="changeTheme('blue')"
-              :class="['blue', { active: this.theme === 'blue' }]"
+              @click="changeTheme('color3')"
+              :class="['color3', { active: this.theme === 'color3' }]"
             ></v-btn>
           </li>
         </ul>

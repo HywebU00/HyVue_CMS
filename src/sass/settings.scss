@@ -9,12 +9,13 @@
 @import '@/sass/customizingComponents/table.scss';
 @import '@/sass/customizingComponents/card.scss';
 @import '@/sass/customizingComponents/treeBlock.scss';
+@import '@/sass/customizingComponents/accordion.scss';
+@import '@/sass/customizingComponents/datePicker.scss';
 
 //material-icons-round
 @import '@/sass/vendor/material-icons-round.scss';
 
 //layout
-@import '@/sass/layout/main.scss'; //vuetifyCSS
 @import '@/sass/layout/layout.scss';
 @import '@/sass/layout/customize_color.scss';
 @import '@/sass/layout/customize_font.scss';

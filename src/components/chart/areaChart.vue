@@ -20,7 +20,6 @@ const option = ref({
     text: "圖表標題(可省略)",
     left: "center",
   },
-  color: ["#00DDFF", "#37A2FF", "#FF0087", "#FFBF00"],
   xAxis: {
     type: "category",
     boundaryGap: false,
@@ -51,12 +50,20 @@ const option = ref({
         focus: "series",
       },
       data: [120, 132, 101, 134, 90, 230, 210],
+      itemStyle: {
+        color: "#3fd1b5",
+        shadowColor: "#3fd1b5",
+      },
     },
     {
       name: "Search Engine",
       type: "line",
       stack: "Total",
       data: [320, 400, 191, 234, 290, 330, 310],
+      itemStyle: {
+        color: "#32a7fa",
+        shadowColor: "#32a7fa",
+      },
       areaStyle: {},
     },
   ],
