@@ -3,13 +3,13 @@
     <div ref="loginCard" class="mt-16">
       <v-sheet elevation="5" rounded="lg" width="320px" class="pa-4 r mx-auto">
         <v-img
-          :width="100"
+          :width="50"
           aspect-ratio="1/1"
-          class="mr-auto ml-auto"
+          class="mr-auto ml-auto mt-5"
           cover
-          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          src="~@/assets/images/logo.png"
         ></v-img>
-        <h2 class="my-3 text-center">網站管理平台</h2>
+        <h2 class="my-3 mb-5 text-center">網站管理平台</h2>
         <v-divider class="pt-2 mb-2"></v-divider>
         <v-form fast-fail>
           <v-text-field

@@ -128,20 +128,6 @@
 .photoCard {
   width: 9.5%;
   margin: 0.25%;
-  @media screen and (max-width: 1440px) {
-    width: 19.5%;
-  }
-  @include screen('notebook') {
-    width: 19.5%;
-  }
-  @include screen('tablet') {
-    width: 24%;
-    margin: 0.5%;
-  }
-  @include screen('mobile') {
-    width: 49%;
-    margin: 0.5%;
-  }
 
   &.v-card {
     width: 100%;
