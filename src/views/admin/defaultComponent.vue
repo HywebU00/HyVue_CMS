@@ -27,16 +27,16 @@
         </v-card>
       </v-col>
       <v-col md="8" cols="12">
-        <v-card class="pa-2">
+        <v-card class="pa-2 h-100">
           <h4 class="text-h6 text-primary font-weight-bold">網站流量</h4>
           <v-divider class="pt-2 mb-2"></v-divider>
-          <lineAndBarChart /></v-card
+          <lineAndBarChart /> </v-card
       ></v-col>
       <v-col md="4" cols="12">
-        <v-card class="pa-2">
+        <v-card class="pa-2 h-100">
           <h4 class="text-h6 text-primary font-weight-bold">數據分析</h4>
           <v-divider class="pt-2 mb-2"></v-divider>
-          <pieChart />
+          <pieChart class="" />
         </v-card>
       </v-col>
       <v-col md="6" cols="12">
