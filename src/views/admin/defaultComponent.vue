@@ -36,7 +36,9 @@
         <v-card class="pa-2 h-100">
           <h4 class="text-h6 text-primary font-weight-bold">數據分析</h4>
           <v-divider class="pt-2 mb-2"></v-divider>
-          <pieChart class="" />
+          <div class="d-flex align-center pieCard">
+            <pieChart class="" />
+          </div>
         </v-card>
       </v-col>
       <v-col md="6" cols="12">
@@ -142,3 +144,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.pieCard {
+  height: 90%;
+}
+</style>

@@ -21,6 +21,35 @@ export default {
         dataLabels: {
           enabled: false,
         },
+        responsive: [
+          {
+            breakpoint: 1200,
+            options: {
+              chart: {},
+              legend: {
+                position: "bottom",
+              },
+            },
+          },
+          {
+            breakpoint: 991,
+            options: {
+              chart: {},
+              legend: {
+                position: "right",
+              },
+            },
+          },
+          {
+            breakpoint: 767,
+            options: {
+              chart: {},
+              legend: {
+                position: "right",
+              },
+            },
+          },
+        ],
       },
     };
   },
