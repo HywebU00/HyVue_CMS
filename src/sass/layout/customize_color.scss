@@ -61,4 +61,33 @@
       }
     }
   }
+  .dp__main {
+    .dp__input {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
+  }
+  .ql-snow {
+    .ql-stroke {
+      stroke: #959595;
+    }
+    .ql-picker {
+      color: #fff;
+    }
+    .ql-picker-label {
+      color: #fff;
+      &:hover {
+        color: #000;
+      }
+    }
+    .ql-active {
+      color: #000;
+    }
+    .ql-expanded {
+      color: #000;
+    }
+    .ql-picker.ql-expanded .ql-picker-label {
+      color: #959595;
+    }
+  }
 }
