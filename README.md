@@ -6,7 +6,7 @@
 - 切版設計師:
 - 關於此專案: 根據常用頁面 整理一份後台系統頁面
   相關文件請參閱
-  [HyVue CMS 文件](https://hywebu00.github.io/Vue_CMS_doc/#/)
+  [HyVue CMS 文件](https://hywebu00.github.io/HyVue_CMS_doc/#/)
   <br/>
   <br/>
 
