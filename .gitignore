@@ -1,6 +1,7 @@
 node_modules
 /dist
-
+deploy copy.sh
+deploy.sh
 # local env files
 .env.local
 .env.*.local
