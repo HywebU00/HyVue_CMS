@@ -204,7 +204,7 @@
                     ></v-checkbox>
                     <v-img src="~@/assets/demo/03.jpg" cover></v-img>
                   </div>
-                  <div class="info" v-bind="props">
+                  <div class="info">
                     <v-card-item>
                       <v-card-title>檔案名稱檔案名稱檔案名稱</v-card-title>
                     </v-card-item>
