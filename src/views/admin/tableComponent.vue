@@ -276,10 +276,71 @@
       </div>
     </v-card>
     <!-- tablet 卡片列 end -->
+    <v-divider class="border-opacity-100 my-8" color="#ccc">
+      dataTableServer樣式</v-divider
+    >
+    <!-- tablet 卡片列 start -->
+    <v-card class="mb-5">
+      <div class="">
+        <v-container class="container">
+          <!-- 標籤列 start -->
+          <v-row class="mb-1">
+            <v-col cols="12" class="py-0"
+              ><div>
+                <v-chip-group v-model="selection">
+                  <v-chip
+                    v-for="item in 6"
+                    :key="item"
+                    color="primary"
+                    link
+                    label
+                  >
+                    標籤
+                  </v-chip>
+                </v-chip-group>
+              </div>
+              <v-divider class="my-2"></v-divider>
+            </v-col>
+            <v-col class="pb-0 justify-end d-flex" cols="12">
+              <v-btn
+                variant="flat"
+                color="primary "
+                size="small"
+                prepend-icon="mdi-plus"
+                >新增</v-btn
+              >
+            </v-col>
+          </v-row>
+          <!-- 標籤列 end -->
+          <v-row class="mt-0">
+            <v-col>
+              <dataTableServer></dataTableServer>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
+    </v-card>
+    <v-divider class="border-opacity-100 my-8" color="#ccc">
+      dataTable樣式
+    </v-divider>
+    <v-card>
+      <div class="">
+        <v-container>
+          <v-row class="mt-0">
+            <v-col>
+              <dataTable></dataTable>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
+    </v-card>
+    <!-- tablet 卡片列 end -->
   </v-container>
 </template>
 
 <script>
+import dataTableServer from "@/components/dataTableServer.vue";
+import dataTable from "@/components/dataTable.vue";
 export default {
   data: () => ({
     tab: null,
@@ -321,8 +382,12 @@ export default {
         status: "待審",
       },
     ],
-    //table serve
   }),
   methods: {},
+  //table serve
+  components: {
+    dataTableServer,
+    dataTable,
+  },
 };
 </script>

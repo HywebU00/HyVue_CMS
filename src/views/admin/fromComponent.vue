@@ -760,7 +760,9 @@
       <!-- 日期選擇器 start -->
       <v-col cols="12" md="6">
         <v-card class="pa-2 h-100 overflow-visible">
-          <h4 class="text-h6 text-primary font-weight-bold">日期選擇器</h4>
+          <h4 class="text-h6 text-primary font-weight-bold">
+            vue-datepicker 日期選擇器
+          </h4>
           <v-divider class="pt-1 mb-2"></v-divider>
           <!-- 若無需使用則 npm uninstall -D @vuepic/vue-datepicker 解安裝 -->
           <v-form>
@@ -812,7 +814,28 @@
           </v-form>
         </v-card>
       </v-col>
-
+      <!-- 日期選擇器 end -->
+      <!-- Vueutify組合 日期選擇器 start -->
+      <v-col cols="12" md="6">
+        <v-card class="pa-2 h-100 overflow-visible">
+          <h4 class="text-h6 text-primary font-weight-bold">
+            Vueutify組合 日期選擇器
+          </h4>
+          <v-divider class="pt-1 mb-2"></v-divider>
+          <v-form>
+            <v-container>
+              <v-row class="formGrp">
+                <v-col class="pb-0" cols="12" lg="2">
+                  <label class="text-primary ml-0" for="">選擇日期</label>
+                </v-col>
+                <v-col cols=""
+                  ><datepickerModalVue> </datepickerModalVue>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-form>
+        </v-card>
+      </v-col>
       <!-- 日期選擇器 end -->
     </v-row>
   </v-container>
@@ -826,6 +849,8 @@ import "@vueup/vue-quill/dist/vue-quill.snow.css";
 //載入 日期選擇器
 import VueDatePicker from "@vuepic/vue-datepicker";
 import "@vuepic/vue-datepicker/dist/main.css";
+//載入 Ｖuetify組合 日期選擇器
+import datepickerModalVue from "@/components/datepickerModal.vue";
 
 export default {
   data: () => ({
@@ -841,6 +866,7 @@ export default {
   components: {
     QuillEditor,
     VueDatePicker,
+    datepickerModalVue,
   },
 };
 </script>

@@ -1,8 +1,8 @@
 ## 關於此專案
 
 - 專案名稱: HyVue CMS
-- 框架版本號: HyVue CMS v1.0.0
-- Vuetify 版本: v3.3.12
+- 框架版本號: HyVue CMS v1.0.1
+- Vuetify 版本: v3.6.9
 
 - UI 設計師:
 - 切版設計師:
